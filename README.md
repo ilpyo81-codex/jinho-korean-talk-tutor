@@ -40,3 +40,16 @@ Settings → Pages → Deploy from a branch → main → / root → Save
 ## Important note
 
 The automatic voice score uses the browser's speech recognition. It may not work in all Android browsers. Recording and playback should work on HTTPS pages if microphone permission is allowed.
+
+
+## Cache fix
+
+This version adds cache-busting query strings:
+
+```html
+style.css?v=talk2
+data.js?v=talk2
+app.js?v=talk2
+```
+
+This forces GitHub Pages and Chrome to load the new conversation-style app instead of the old cached card-style app.
