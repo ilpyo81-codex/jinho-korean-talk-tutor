@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JINHO Korean Tutor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="skin-minecraft">
+  <div class="app">
+    <header class="topbar">
+      <div>
+        <div class="brand">K-Tutor Korean</div>
+        <div class="subtitle" id="subtitleText">Korean speaking missions for kids</div>
+      </div>
+      <div class="top-actions">
+        <button class="lang-btn" id="langBtn">한국어</button>
+        <div class="streak">
+          <span id="streakDays">0</span>
+          <small id="streakLabel">streak</small>
+        </div>
+      </div>
+    </header>
+
+    <div class="skin-strip" id="skinStrip"></div>
+
+    <main id="screen">
+      <section class="card">
+        <h1>Loading...</h1>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" id="bottomNav">
+      <button id="tab-home" data-tab="home">Home</button>
+      <button id="tab-lesson" data-tab="lesson">Lesson</button>
+      <button id="tab-review" data-tab="review">Review</button>
+      <button id="tab-speak" data-tab="speak">Speak</button>
+      <button id="tab-profile" data-tab="profile">Profile</button>
+    </nav>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
