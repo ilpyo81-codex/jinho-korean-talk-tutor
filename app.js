@@ -33,6 +33,11 @@
       record: "Record voice",
       stop: "Stop",
       next: "Next chat",
+      micPrompt: "Tap the mic and say it!",
+      listening: "Listening to JINHO...",
+      streamerTag: "🎮 Streamer Tutor Mode",
+      retryCoach: "Nice try! Power up and say it again!",
+      successCoach: "Boom! Great Korean! Next mission!",
       finish: "Finish lesson",
       sayThis: "Say this in Korean",
       meaning: "Meaning",
@@ -80,6 +85,11 @@
       record: "음성 녹음",
       stop: "정지",
       next: "다음 대화",
+      micPrompt: "마이크를 누르고 말해요!",
+      listening: "JINHO의 말을 듣고 있어요...",
+      streamerTag: "🎮 스트리머 튜터 모드",
+      retryCoach: "오 거의 됐어요! 파워업하고 다시 말해봐요!",
+      successCoach: "좋아요! 한국어 미션 성공! 다음으로 가요!",
       finish: "수업 완료",
       sayThis: "이 한국어를 말해요",
       meaning: "뜻",
@@ -134,6 +144,8 @@
     feedback: "",
     score: null,
     recognized: "",
+    jinhoBubble: "",
+    tutorReply: "",
     voiceBlocked: false,
     audioUrl: "",
     recorder: null,
@@ -296,9 +308,13 @@
       <section class="card page-flip">
         <div class="muted">${lesson.title[state.lang]} · ${state.stepIndex + 1} / ${currentSteps().length}</div>
         <h2>${theme.icon} Tutor Hana</h2>
+        <span class="tutor-energy">${T("streamerTag")}</span>
         <div class="chat-window">
           ${messageHtml("tutor", "🧑🏻‍🎤", step.tutor[state.lang])}
           ${messageHtml("tutor", "🧑🏻‍🎤", step.explain[state.lang])}
+          ${messageHtml("tutor", "🧑🏻‍🎤", `${T("sayThis")}: ${step.expression}`)}
+          ${state.jinhoBubble ? messageHtml("jinho", "👦", state.jinhoBubble) : ""}
+          ${state.tutorReply ? messageHtml("tutor", "🧑🏻‍🎤", state.tutorReply) : ""}
         </div>
         <div class="actions">
           <button id="listenTutorBtn">${T("listenTutor")}</button>
@@ -308,14 +324,16 @@
 
       ${sceneHtml()}
 
-      <section class="expression-card page-flip">
+      <section class="expression-card active page-flip">
         <h3>${T("sayThis")}</h3>
         <div class="expression">${step.expression}</div>
         <div class="roman">${T("roman")}: ${step.roman}</div>
         <div class="meaning">${T("meaning")}: ${step.meaning[state.lang]}</div>
         <div class="actions">
           <button id="listenExpressionBtn">${T("listenExpression")}</button>
-          <button class="secondary" id="scoreVoiceBtn">${T("scoreVoice")}</button>
+        </div>
+        <div class="mic-chat">
+          <button class="mic-round" id="scoreVoiceBtn">🎙 ${T("micPrompt")}</button>
         </div>
       </section>
 
@@ -435,7 +453,15 @@
       speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = lang;
-      utterance.rate = rate || 0.85;
+      utterance.rate = rate || 0.95;
+      utterance.pitch = lang === "ko-KR" ? 1.12 : 1.22;
+
+      const voices = speechSynthesis.getVoices ? speechSynthesis.getVoices() : [];
+      const preferred = voices.find((voice) =>
+        voice.lang && voice.lang.toLowerCase().startsWith(lang.toLowerCase().slice(0, 2))
+      );
+      if (preferred) utterance.voice = preferred;
+
       utterance.onend = () => {
         if (typeof onEnd === "function") onEnd();
       };
@@ -498,7 +524,8 @@
     recognition.maxAlternatives = 1;
 
     state.voiceBlocked = false;
-    state.feedback = state.lang === "en" ? "Listening..." : "듣고 있어요...";
+    state.feedback = T("listening");
+    state.tutorReply = "";
     render();
 
     recognition.onresult = (event) => {
@@ -526,26 +553,30 @@
     const score = similarityScore(spoken, target);
 
     state.recognized = spoken || "-";
+    state.jinhoBubble = spoken || "-";
     state.score = score;
     state.progress.attempts += 1;
 
-    if (score >= 90) {
-      state.feedback = `<span class="good">${T("perfect")}</span>`;
+    if (score >= 75) {
+      state.feedback = `<span class="good">${score >= 90 ? T("perfect") : T("good")}</span>`;
       state.progress.correct += 1;
       addMastered(target);
-      speakReaction();
-    } else if (score >= 70) {
-      state.feedback = `<span class="good">${T("good")}</span>`;
-      state.progress.correct += 1;
-      addMastered(target);
-      speakReaction();
-    } else {
-      state.feedback = `<span class="bad">${T("retry")}</span>`;
-      addWeak(target);
+      state.tutorReply = currentStep().reaction[state.lang] + " " + T("successCoach");
+      save();
+      render();
+      speakText(state.tutorReply, state.lang === "ko" ? "ko-KR" : "en-US", 1.02);
+      setTimeout(() => nextChat(), 2600);
+      return;
     }
 
+    state.feedback = `<span class="bad">${T("retry")}</span>`;
+    addWeak(target);
+    state.tutorReply = T("retryCoach") + " " + (state.lang === "en" ? "Listen again: " : "다시 들어봐요: ") + target;
     save();
     render();
+    speakText(state.tutorReply, state.lang === "ko" ? "ko-KR" : "en-US", 1.02, () => {
+      setTimeout(() => speakKorean(target), 350);
+    });
   }
 
   function speakReaction() {
@@ -569,6 +600,8 @@
     state.feedback = "";
     state.score = null;
     state.recognized = "";
+    state.jinhoBubble = "";
+    state.tutorReply = "";
     state.voiceBlocked = false;
     state.audioUrl = "";
 
@@ -757,6 +790,8 @@
     state.feedback = "";
     state.score = null;
     state.recognized = "";
+    state.jinhoBubble = "";
+    state.tutorReply = "";
     state.voiceBlocked = false;
     save();
     render();

@@ -482,3 +482,58 @@ button.big {
   .expression { font-size: 29px; }
   .bubble { max-width: 86%; }
 }
+
+
+.message.jinho .bubble {
+  background: linear-gradient(135deg, var(--primary), #111827);
+  color: white;
+}
+
+.message.system .bubble {
+  background: #fff7ed;
+  border-color: #fed7aa;
+  color: #9a3412;
+}
+
+.mic-chat {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.mic-round {
+  width: 100%;
+  min-height: 70px;
+  border-radius: 999px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tutor-energy {
+  display: inline-block;
+  background: var(--orange);
+  color: var(--orangeText);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 13px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.chat-hint {
+  background: var(--soft);
+  color: var(--primary);
+  border-radius: 16px;
+  padding: 10px 12px;
+  font-weight: 900;
+  margin-top: 10px;
+}
+
+.expression-card.active {
+  border-color: var(--primary);
+  box-shadow: 0 14px 34px rgba(17, 24, 39, 0.08);
+}

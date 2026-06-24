@@ -53,3 +53,16 @@ app.js?v=talk2
 ```
 
 This forces GitHub Pages and Chrome to load the new conversation-style app instead of the old cached card-style app.
+
+
+## Chat mic update talk3
+
+This version makes the lesson more like a real conversation:
+
+- Tutor Hana appears in chat bubbles.
+- JINHO also appears in the chat when he speaks.
+- The microphone button is part of the conversation flow.
+- Recognized Korean speech is shown as JINHO's chat bubble.
+- If the score is high enough, Tutor Hana reacts and moves to the next chat.
+- If the score is low, Tutor Hana asks JINHO to try again.
+- Tutor TTS uses higher pitch/rate for a more playful streamer-like feel, within browser TTS limits.
