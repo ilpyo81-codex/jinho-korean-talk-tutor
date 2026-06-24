@@ -1,4 +1,4 @@
-window.KTUTOR_DATA = {
+window.TALK_TUTOR_DATA = {
   themes: {
     minecraft: {
       icon: "⛏️",
@@ -30,272 +30,456 @@ window.KTUTOR_DATA = {
     }
   },
 
-  curriculum: [
+  lessons: [
     {
-      id: "greet",
-      title: { en: "Hello Friends", ko: "친구에게 인사하기" },
-      goal: { en: "Say hello and thank you politely", ko: "인사와 감사 표현 말하기" },
-      items: [
-        {
-          korean: "안녕하세요",
-          roman: "annyeonghaseyo",
-          en: "Hello",
-          checks: ["안녕하세요"],
-          hint: { en: "A polite hello.", ko: "정중한 인사예요." }
-        },
-        {
-          korean: "감사합니다",
-          roman: "gamsahamnida",
-          en: "Thank you",
-          checks: ["감사합니다"],
-          hint: { en: "A polite thank you.", ko: "정중하게 고마움을 말해요." }
-        },
-        {
-          korean: "괜찮습니다",
-          roman: "gwaenchanseumnida",
-          en: "It is okay",
-          checks: ["괜찮습니다"],
-          hint: { en: "A polite way to say you are okay.", ko: "괜찮다고 정중하게 말해요." }
-        }
-      ]
+      id: "hello",
+      title: { en: "Meet a friend", ko: "친구 만나기" },
+      steps: {
+        minecraft: [
+          {
+            tutor: {
+              en: "JINHO, you are in a Minecraft village. A villager is standing in front of you.",
+              ko: "JINHO, 마인크래프트 마을에 왔어요. 주민이 앞에 서 있어요."
+            },
+            explain: {
+              en: "When you meet someone, you can say this in Korean.",
+              ko: "누군가를 만났을 때 한국어로 이렇게 말할 수 있어요."
+            },
+            expression: "안녕하세요",
+            roman: "annyeonghaseyo",
+            meaning: { en: "Hello", ko: "안녕하세요" },
+            reaction: {
+              en: "Great! The villager smiles at JINHO.",
+              ko: "좋아요! 주민이 JINHO에게 웃어줬어요."
+            }
+          },
+          {
+            tutor: {
+              en: "The villager gives JINHO a block.",
+              ko: "주민이 JINHO에게 블록을 줬어요."
+            },
+            explain: {
+              en: "When someone gives you something, say this politely.",
+              ko: "누군가 무언가를 주면 정중하게 이렇게 말해요."
+            },
+            expression: "감사합니다",
+            roman: "gamsahamnida",
+            meaning: { en: "Thank you", ko: "감사합니다" },
+            reaction: {
+              en: "Nice! JINHO used a polite Korean word.",
+              ko: "좋아요! JINHO가 정중한 한국어를 사용했어요."
+            }
+          }
+        ],
+        roblox: [
+          {
+            tutor: {
+              en: "JINHO enters a Roblox obby. A friendly avatar waves at him.",
+              ko: "JINHO가 로블록스 오비에 들어갔어요. 친절한 아바타가 손을 흔들어요."
+            },
+            explain: {
+              en: "When you meet a new friend, say this.",
+              ko: "새 친구를 만났을 때 이렇게 말해요."
+            },
+            expression: "안녕하세요",
+            roman: "annyeonghaseyo",
+            meaning: { en: "Hello", ko: "안녕하세요" },
+            reaction: {
+              en: "Great! The avatar wants to play with JINHO.",
+              ko: "좋아요! 아바타가 JINHO와 같이 놀고 싶어해요."
+            }
+          },
+          {
+            tutor: {
+              en: "The avatar gives JINHO a star.",
+              ko: "아바타가 JINHO에게 별을 줬어요."
+            },
+            explain: {
+              en: "Now JINHO can say thank you in Korean.",
+              ko: "이제 JINHO가 한국어로 고맙다고 말할 수 있어요."
+            },
+            expression: "감사합니다",
+            roman: "gamsahamnida",
+            meaning: { en: "Thank you", ko: "감사합니다" },
+            reaction: {
+              en: "Good job! The avatar is happy.",
+              ko: "잘했어요! 아바타가 기뻐해요."
+            }
+          }
+        ],
+        pokemon: [
+          {
+            tutor: {
+              en: "JINHO meets Pikachu on a small road.",
+              ko: "JINHO가 작은 길에서 피카츄를 만났어요."
+            },
+            explain: {
+              en: "When you meet Pikachu, say hello in Korean.",
+              ko: "피카츄를 만나면 한국어로 인사해요."
+            },
+            expression: "안녕하세요",
+            roman: "annyeonghaseyo",
+            meaning: { en: "Hello", ko: "안녕하세요" },
+            reaction: {
+              en: "Pikachu says pika pika!",
+              ko: "피카츄가 피카피카라고 말해요!"
+            }
+          },
+          {
+            tutor: {
+              en: "Pikachu shares a berry with JINHO.",
+              ko: "피카츄가 JINHO에게 열매를 나눠줬어요."
+            },
+            explain: {
+              en: "When someone shares something, say this.",
+              ko: "누군가 나눠주면 이렇게 말해요."
+            },
+            expression: "감사합니다",
+            roman: "gamsahamnida",
+            meaning: { en: "Thank you", ko: "감사합니다" },
+            reaction: {
+              en: "Great! Pikachu smiles.",
+              ko: "좋아요! 피카츄가 웃어요."
+            }
+          }
+        ],
+        mario: [
+          {
+            tutor: {
+              en: "JINHO meets Mario near a green pipe.",
+              ko: "JINHO가 초록 파이프 근처에서 마리오를 만났어요."
+            },
+            explain: {
+              en: "Before the adventure starts, say hello in Korean.",
+              ko: "모험을 시작하기 전에 한국어로 인사해요."
+            },
+            expression: "안녕하세요",
+            roman: "annyeonghaseyo",
+            meaning: { en: "Hello", ko: "안녕하세요" },
+            reaction: {
+              en: "Mario says, let’s go!",
+              ko: "마리오가 같이 가자고 해요!"
+            }
+          },
+          {
+            tutor: {
+              en: "Mario gives JINHO a coin.",
+              ko: "마리오가 JINHO에게 코인을 줬어요."
+            },
+            explain: {
+              en: "When someone gives you something, say thank you.",
+              ko: "누군가 무언가를 주면 감사하다고 말해요."
+            },
+            expression: "감사합니다",
+            roman: "gamsahamnida",
+            meaning: { en: "Thank you", ko: "감사합니다" },
+            reaction: {
+              en: "Great! JINHO is polite.",
+              ko: "좋아요! JINHO가 예의 바르게 말했어요."
+            }
+          }
+        ]
+      }
     },
     {
       id: "drink",
-      title: { en: "Ask for a Drink", ko: "마실 것 부탁하기" },
-      goal: { en: "Ask for water, juice, or milk", ko: "물, 주스, 우유 부탁하기" },
-      items: [
-        {
-          korean: "물 주세요",
-          roman: "mul juseyo",
-          en: "Water, please",
-          checks: ["물 주세요"],
-          hint: { en: "Short and useful.", ko: "짧고 쉬운 표현이에요." }
-        },
-        {
-          korean: "주스 주세요",
-          roman: "juseu juseyo",
-          en: "Juice, please",
-          checks: ["주스 주세요"],
-          hint: { en: "Use this when you want juice.", ko: "주스를 원할 때 써요." }
-        },
-        {
-          korean: "우유 주세요",
-          roman: "uyu juseyo",
-          en: "Milk, please",
-          checks: ["우유 주세요"],
-          hint: { en: "Use this when you want milk.", ko: "우유를 원할 때 써요." }
-        }
-      ]
+      title: { en: "Ask for a drink", ko: "마실 것 부탁하기" },
+      steps: {
+        minecraft: [
+          {
+            tutor: {
+              en: "JINHO and Steve finish building a small house.",
+              ko: "JINHO와 Steve가 작은 집을 완성했어요."
+            },
+            explain: {
+              en: "JINHO is thirsty. He can ask for water in Korean.",
+              ko: "JINHO가 목이 말라요. 한국어로 물을 부탁할 수 있어요."
+            },
+            expression: "물 주세요",
+            roman: "mul juseyo",
+            meaning: { en: "Water, please", ko: "물 주세요" },
+            reaction: {
+              en: "Good! Steve brings water.",
+              ko: "좋아요! Steve가 물을 가져왔어요."
+            }
+          },
+          {
+            tutor: {
+              en: "Now JINHO wants juice after playing.",
+              ko: "이제 JINHO가 놀고 나서 주스를 마시고 싶어요."
+            },
+            explain: {
+              en: "He can ask politely like this.",
+              ko: "정중하게 이렇게 부탁할 수 있어요."
+            },
+            expression: "주스 주세요",
+            roman: "juseu juseyo",
+            meaning: { en: "Juice, please", ko: "주스 주세요" },
+            reaction: {
+              en: "Nice! JINHO asked politely.",
+              ko: "좋아요! JINHO가 정중하게 부탁했어요."
+            }
+          }
+        ],
+        roblox: [
+          {
+            tutor: {
+              en: "JINHO finishes a Roblox obby jump.",
+              ko: "JINHO가 로블록스 오비 점프를 성공했어요."
+            },
+            explain: {
+              en: "After jumping, JINHO can ask for water.",
+              ko: "점프한 뒤 JINHO가 물을 부탁할 수 있어요."
+            },
+            expression: "물 주세요",
+            roman: "mul juseyo",
+            meaning: { en: "Water, please", ko: "물 주세요" },
+            reaction: {
+              en: "Great! JINHO gets water at the checkpoint.",
+              ko: "좋아요! JINHO가 체크포인트에서 물을 받았어요."
+            }
+          },
+          {
+            tutor: {
+              en: "At the checkpoint cafe, JINHO wants juice.",
+              ko: "체크포인트 카페에서 JINHO가 주스를 원해요."
+            },
+            explain: {
+              en: "Say this Korean sentence.",
+              ko: "이 한국어 문장을 말해요."
+            },
+            expression: "주스 주세요",
+            roman: "juseu juseyo",
+            meaning: { en: "Juice, please", ko: "주스 주세요" },
+            reaction: {
+              en: "Good job! The juice is ready.",
+              ko: "잘했어요! 주스가 준비됐어요."
+            }
+          }
+        ],
+        pokemon: [
+          {
+            tutor: {
+              en: "JINHO and Pikachu played outside.",
+              ko: "JINHO와 피카츄가 밖에서 놀았어요."
+            },
+            explain: {
+              en: "Pikachu is thirsty. JINHO can ask for water.",
+              ko: "피카츄가 목이 말라요. JINHO가 물을 부탁할 수 있어요."
+            },
+            expression: "물 주세요",
+            roman: "mul juseyo",
+            meaning: { en: "Water, please", ko: "물 주세요" },
+            reaction: {
+              en: "Great! Pikachu drinks water.",
+              ko: "좋아요! 피카츄가 물을 마셔요."
+            }
+          },
+          {
+            tutor: {
+              en: "After walking to the next town, JINHO wants juice.",
+              ko: "다음 마을까지 걸어간 뒤 JINHO가 주스를 원해요."
+            },
+            explain: {
+              en: "Ask in Korean like this.",
+              ko: "한국어로 이렇게 부탁해요."
+            },
+            expression: "주스 주세요",
+            roman: "juseu juseyo",
+            meaning: { en: "Juice, please", ko: "주스 주세요" },
+            reaction: {
+              en: "Nice! JINHO got juice.",
+              ko: "좋아요! JINHO가 주스를 받았어요."
+            }
+          }
+        ],
+        mario: [
+          {
+            tutor: {
+              en: "JINHO and Mario run across the grass land.",
+              ko: "JINHO와 마리오가 초원을 달렸어요."
+            },
+            explain: {
+              en: "JINHO is thirsty. He can ask for water.",
+              ko: "JINHO가 목이 말라요. 물을 부탁할 수 있어요."
+            },
+            expression: "물 주세요",
+            roman: "mul juseyo",
+            meaning: { en: "Water, please", ko: "물 주세요" },
+            reaction: {
+              en: "Mario brings water. Great!",
+              ko: "마리오가 물을 가져왔어요. 좋아요!"
+            }
+          },
+          {
+            tutor: {
+              en: "After collecting coins, JINHO wants juice.",
+              ko: "코인을 모은 뒤 JINHO가 주스를 원해요."
+            },
+            explain: {
+              en: "Say this Korean sentence.",
+              ko: "이 한국어 문장을 말해요."
+            },
+            expression: "주스 주세요",
+            roman: "juseu juseyo",
+            meaning: { en: "Juice, please", ko: "주스 주세요" },
+            reaction: {
+              en: "Great! JINHO asked nicely.",
+              ko: "좋아요! JINHO가 예쁘게 부탁했어요."
+            }
+          }
+        ]
+      }
     },
     {
       id: "help",
-      title: { en: "Ask for Help", ko: "도움 요청하기" },
-      goal: { en: "Use short help sentences", ko: "짧은 도움 표현 말하기" },
-      items: [
-        {
-          korean: "도와주세요",
-          roman: "dowajuseyo",
-          en: "Please help me",
-          checks: ["도와주세요"],
-          hint: { en: "Say this when you need help.", ko: "도움이 필요할 때 써요." }
-        },
-        {
-          korean: "어디예요?",
-          roman: "eodiyeyo?",
-          en: "Where is it?",
-          checks: ["어디예요", "어디예요?"],
-          hint: { en: "Ask where something is.", ko: "어디인지 물어요." }
-        },
-        {
-          korean: "다시 해보겠습니다",
-          roman: "dasi haebogetseumnida",
-          en: "I will try again",
-          checks: ["다시 해보겠습니다"],
-          hint: { en: "A polite way to say you will try again.", ko: "다시 하겠다고 정중히 말해요." }
-        }
-      ]
+      title: { en: "Ask for help", ko: "도움 요청하기" },
+      steps: {
+        minecraft: [
+          {
+            tutor: {
+              en: "JINHO enters a dark Minecraft cave.",
+              ko: "JINHO가 어두운 마인크래프트 동굴에 들어갔어요."
+            },
+            explain: {
+              en: "When he needs help, he can say this.",
+              ko: "도움이 필요할 때 이렇게 말할 수 있어요."
+            },
+            expression: "도와주세요",
+            roman: "dowajuseyo",
+            meaning: { en: "Please help me", ko: "도와주세요" },
+            reaction: {
+              en: "Steve hears JINHO and comes to help.",
+              ko: "Steve가 JINHO의 말을 듣고 도와주러 왔어요."
+            }
+          },
+          {
+            tutor: {
+              en: "Steve points to a path, but JINHO wants to know the exact place.",
+              ko: "Steve가 길을 가리켰지만 JINHO는 정확한 장소를 알고 싶어요."
+            },
+            explain: {
+              en: "He can ask, where is it?",
+              ko: "어디인지 이렇게 물을 수 있어요."
+            },
+            expression: "어디예요?",
+            roman: "eodiyeyo?",
+            meaning: { en: "Where is it?", ko: "어디예요?" },
+            reaction: {
+              en: "Good! Now JINHO can find the path.",
+              ko: "좋아요! 이제 JINHO가 길을 찾을 수 있어요."
+            }
+          }
+        ],
+        roblox: [
+          {
+            tutor: {
+              en: "JINHO cannot find the next Roblox checkpoint.",
+              ko: "JINHO가 다음 로블록스 체크포인트를 못 찾았어요."
+            },
+            explain: {
+              en: "When he needs help, say this.",
+              ko: "도움이 필요하면 이렇게 말해요."
+            },
+            expression: "도와주세요",
+            roman: "dowajuseyo",
+            meaning: { en: "Please help me", ko: "도와주세요" },
+            reaction: {
+              en: "An NPC comes to help JINHO.",
+              ko: "NPC가 JINHO를 도와주러 왔어요."
+            }
+          },
+          {
+            tutor: {
+              en: "The NPC says the checkpoint is nearby.",
+              ko: "NPC가 체크포인트가 근처에 있다고 말해요."
+            },
+            explain: {
+              en: "JINHO can ask where it is.",
+              ko: "JINHO가 어디인지 물을 수 있어요."
+            },
+            expression: "어디예요?",
+            roman: "eodiyeyo?",
+            meaning: { en: "Where is it?", ko: "어디예요?" },
+            reaction: {
+              en: "Great! JINHO finds the checkpoint.",
+              ko: "좋아요! JINHO가 체크포인트를 찾았어요."
+            }
+          }
+        ],
+        pokemon: [
+          {
+            tutor: {
+              en: "JINHO and Pikachu cannot find the road.",
+              ko: "JINHO와 피카츄가 길을 못 찾았어요."
+            },
+            explain: {
+              en: "JINHO can ask for help in Korean.",
+              ko: "JINHO가 한국어로 도움을 요청할 수 있어요."
+            },
+            expression: "도와주세요",
+            roman: "dowajuseyo",
+            meaning: { en: "Please help me", ko: "도와주세요" },
+            reaction: {
+              en: "A trainer comes and helps them.",
+              ko: "트레이너가 와서 도와줬어요."
+            }
+          },
+          {
+            tutor: {
+              en: "The trainer points to the Pokémon gym.",
+              ko: "트레이너가 포켓몬 체육관을 가리켰어요."
+            },
+            explain: {
+              en: "JINHO can ask where it is.",
+              ko: "JINHO가 어디인지 물을 수 있어요."
+            },
+            expression: "어디예요?",
+            roman: "eodiyeyo?",
+            meaning: { en: "Where is it?", ko: "어디예요?" },
+            reaction: {
+              en: "Good! Pikachu follows JINHO.",
+              ko: "좋아요! 피카츄가 JINHO를 따라가요."
+            }
+          }
+        ],
+        mario: [
+          {
+            tutor: {
+              en: "JINHO cannot find the right pipe.",
+              ko: "JINHO가 맞는 파이프를 찾지 못했어요."
+            },
+            explain: {
+              en: "When he needs help, he can say this.",
+              ko: "도움이 필요할 때 이렇게 말할 수 있어요."
+            },
+            expression: "도와주세요",
+            roman: "dowajuseyo",
+            meaning: { en: "Please help me", ko: "도와주세요" },
+            reaction: {
+              en: "Mario comes to help JINHO.",
+              ko: "마리오가 JINHO를 도와주러 왔어요."
+            }
+          },
+          {
+            tutor: {
+              en: "Mario points at a castle.",
+              ko: "마리오가 성을 가리켰어요."
+            },
+            explain: {
+              en: "JINHO can ask, where is it?",
+              ko: "JINHO가 어디인지 물을 수 있어요."
+            },
+            expression: "어디예요?",
+            roman: "eodiyeyo?",
+            meaning: { en: "Where is it?", ko: "어디예요?" },
+            reaction: {
+              en: "Great! JINHO knows where to go.",
+              ko: "좋아요! JINHO가 어디로 가야 하는지 알게 됐어요."
+            }
+          }
+        ]
+      }
     }
-  ],
-
-  stories: {
-    minecraft: {
-      greet: [
-        {
-          en: "JINHO arrives at a Minecraft village. A Villager is at the gate. First, JINHO says hello.",
-          ko: "JINHO가 마인크래프트 마을에 도착했어요. 주민이 문 앞에 있어요. 먼저 인사해요."
-        },
-        {
-          en: "The Villager gives JINHO a little block. JINHO says thank you politely.",
-          ko: "주민이 JINHO에게 작은 블록을 줬어요. JINHO가 정중하게 고맙다고 말해요."
-        },
-        {
-          en: "A tiny slime bumps into JINHO. JINHO is okay, so he says he is fine.",
-          ko: "작은 슬라임이 JINHO에게 살짝 부딪혔어요. JINHO는 괜찮아서 괜찮다고 말해요."
-        }
-      ],
-      drink: [
-        {
-          en: "JINHO and Steve finish building a small house. Steve is thirsty. JINHO asks for water.",
-          ko: "JINHO와 Steve가 작은 집을 완성했어요. Steve가 목이 말라요. JINHO가 물을 부탁해요."
-        },
-        {
-          en: "After drinking water, Steve wants to share a treat. JINHO asks for juice.",
-          ko: "물을 마신 뒤 Steve가 간식을 나누고 싶어해요. JINHO가 주스를 부탁해요."
-        },
-        {
-          en: "Before bedtime in the Minecraft house, JINHO asks for milk.",
-          ko: "마인크래프트 집에서 잠자기 전, JINHO가 우유를 부탁해요."
-        }
-      ],
-      help: [
-        {
-          en: "JINHO enters a dark cave. He cannot see the path, so he asks for help.",
-          ko: "JINHO가 어두운 동굴에 들어갔어요. 길이 잘 안 보여서 도움을 요청해요."
-        },
-        {
-          en: "Steve points somewhere, but JINHO wants to know the exact place. He asks where it is.",
-          ko: "Steve가 어딘가를 가리켰어요. JINHO는 정확한 장소를 알고 싶어서 어디인지 물어요."
-        },
-        {
-          en: "JINHO misses a jump. That is okay. He says he will try again.",
-          ko: "JINHO가 점프를 놓쳤어요. 괜찮아요. 다시 해보겠다고 말해요."
-        }
-      ]
-    },
-
-    roblox: {
-      greet: [
-        {
-          en: "JINHO joins a Roblox server. A friendly avatar waves. JINHO says hello.",
-          ko: "JINHO가 로블록스 서버에 들어왔어요. 친절한 아바타가 손을 흔들어요. JINHO가 인사해요."
-        },
-        {
-          en: "The avatar gives JINHO a star. JINHO says thank you politely.",
-          ko: "아바타가 JINHO에게 별을 줬어요. JINHO가 정중하게 고맙다고 말해요."
-        },
-        {
-          en: "JINHO falls softly on a cushion block. He is okay, so he says he is fine.",
-          ko: "JINHO가 쿠션 블록 위에 살짝 떨어졌어요. 괜찮아서 괜찮다고 말해요."
-        }
-      ],
-      drink: [
-        {
-          en: "JINHO finishes a Roblox obby jump. His avatar is thirsty. He asks for water.",
-          ko: "JINHO가 로블록스 오비 점프를 성공했어요. 아바타가 목이 말라요. 물을 부탁해요."
-        },
-        {
-          en: "At the checkpoint cafe, JINHO asks for juice.",
-          ko: "체크포인트 카페에서 JINHO가 주스를 부탁해요."
-        },
-        {
-          en: "Before the next stage, JINHO asks for milk to get strong.",
-          ko: "다음 스테이지 전에 JINHO가 힘을 내려고 우유를 부탁해요."
-        }
-      ],
-      help: [
-        {
-          en: "JINHO cannot find the next checkpoint. He asks for help.",
-          ko: "JINHO가 다음 체크포인트를 못 찾았어요. 도움을 요청해요."
-        },
-        {
-          en: "An NPC says the checkpoint is nearby. JINHO asks, where is it?",
-          ko: "NPC가 체크포인트가 근처에 있다고 해요. JINHO가 어디인지 물어요."
-        },
-        {
-          en: "JINHO misses the jump once. He says he will try again.",
-          ko: "JINHO가 점프를 한 번 실패했어요. 다시 해보겠다고 말해요."
-        }
-      ]
-    },
-
-    pokemon: {
-      greet: [
-        {
-          en: "JINHO meets Pikachu on the road. He says hello gently.",
-          ko: "JINHO가 길에서 피카츄를 만났어요. 부드럽게 인사해요."
-        },
-        {
-          en: "Pikachu shares a berry. JINHO says thank you politely.",
-          ko: "피카츄가 열매를 나눠줬어요. JINHO가 정중하게 고맙다고 말해요."
-        },
-        {
-          en: "Pikachu worries about JINHO. JINHO is okay, so he says he is fine.",
-          ko: "피카츄가 JINHO를 걱정해요. JINHO는 괜찮아서 괜찮다고 말해요."
-        }
-      ],
-      drink: [
-        {
-          en: "JINHO and Pikachu played outside. Pikachu is thirsty. JINHO asks for water.",
-          ko: "JINHO와 피카츄가 밖에서 놀았어요. 피카츄가 목이 말라요. JINHO가 물을 부탁해요."
-        },
-        {
-          en: "After walking to the next town, JINHO asks for juice.",
-          ko: "다음 마을까지 걸어간 뒤, JINHO가 주스를 부탁해요."
-        },
-        {
-          en: "Before the Pokémon gym, JINHO asks for milk.",
-          ko: "포켓몬 체육관에 가기 전, JINHO가 우유를 부탁해요."
-        }
-      ],
-      help: [
-        {
-          en: "JINHO and Pikachu cannot find the road. JINHO asks for help.",
-          ko: "JINHO와 피카츄가 길을 못 찾았어요. JINHO가 도움을 요청해요."
-        },
-        {
-          en: "A trainer points to a road. JINHO asks where it is.",
-          ko: "트레이너가 길을 가리켰어요. JINHO가 어디인지 물어요."
-        },
-        {
-          en: "JINHO tries a gym challenge and misses once. He says he will try again.",
-          ko: "JINHO가 체육관 도전을 하다가 한 번 실패했어요. 다시 해보겠다고 말해요."
-        }
-      ]
-    },
-
-    mario: {
-      greet: [
-        {
-          en: "JINHO meets Mario near a pipe. JINHO says hello before the adventure starts.",
-          ko: "JINHO가 파이프 근처에서 마리오를 만났어요. 모험을 시작하기 전에 인사해요."
-        },
-        {
-          en: "Mario gives JINHO a coin. JINHO says thank you politely.",
-          ko: "마리오가 JINHO에게 코인을 줬어요. JINHO가 정중하게 고맙다고 말해요."
-        },
-        {
-          en: "JINHO bumps a soft block. He is okay, so he says he is fine.",
-          ko: "JINHO가 부드러운 블록에 살짝 부딪혔어요. 괜찮아서 괜찮다고 말해요."
-        }
-      ],
-      drink: [
-        {
-          en: "JINHO and Mario run across the grass land. JINHO asks for water.",
-          ko: "JINHO와 마리오가 초원을 달렸어요. JINHO가 물을 부탁해요."
-        },
-        {
-          en: "After collecting coins, JINHO asks for juice.",
-          ko: "코인을 모은 뒤 JINHO가 주스를 부탁해요."
-        },
-        {
-          en: "Before going to the castle, JINHO asks for milk.",
-          ko: "성으로 가기 전 JINHO가 우유를 부탁해요."
-        }
-      ],
-      help: [
-        {
-          en: "JINHO cannot find the right pipe. He asks for help.",
-          ko: "JINHO가 맞는 파이프를 못 찾았어요. 도움을 요청해요."
-        },
-        {
-          en: "Mario points at a castle. JINHO asks where it is.",
-          ko: "마리오가 성을 가리켰어요. JINHO가 어디인지 물어요."
-        },
-        {
-          en: "JINHO misses a jump. He says he will try again.",
-          ko: "JINHO가 점프를 실패했어요. 다시 해보겠다고 말해요."
-        }
-      ]
-    }
-  }
+  ]
 };

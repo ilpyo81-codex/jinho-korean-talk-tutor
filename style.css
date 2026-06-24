@@ -12,9 +12,7 @@
   --orangeText: #c2410c;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -146,9 +144,7 @@ body.skin-mario {
   border-color: var(--primary);
 }
 
-main {
-  padding: 0 16px;
-}
+main { padding: 0 16px; }
 
 .card {
   background: white;
@@ -159,9 +155,7 @@ main {
   box-shadow: 0 10px 28px rgba(17, 24, 39, 0.05);
 }
 
-body.skin-minecraft .card {
-  border-radius: 12px;
-}
+body.skin-minecraft .card { border-radius: 12px; }
 
 .hero {
   background: linear-gradient(135deg, var(--primary), #8b5cf6);
@@ -169,51 +163,17 @@ body.skin-minecraft .card {
   border: 0;
 }
 
-.hero .muted {
-  color: rgba(255, 255, 255, 0.88);
-}
+.hero .muted { color: rgba(255, 255, 255, 0.88); }
 
 body.skin-mario .hero {
   background: linear-gradient(135deg, #dc2626, #2563eb);
 }
 
-.story {
-  background: linear-gradient(135deg, #fef3c7, #ffedd5);
-  border: 1px solid #fed7aa;
-}
+h1, h2, h3 { margin: 0 0 10px; }
 
-.story h3 {
-  color: #9a3412;
-}
+p { line-height: 1.5; }
 
-body.skin-pokemon .story {
-  background: linear-gradient(135deg, #fff7cc, #ffffff);
-}
-
-h1,
-h2,
-h3 {
-  margin: 0 0 10px;
-}
-
-p {
-  line-height: 1.5;
-}
-
-.muted {
-  color: var(--muted);
-}
-
-.input,
-select {
-  width: 100%;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 14px;
-  font-size: 16px;
-  background: white;
-  margin: 8px 0 14px;
-}
+.muted { color: var(--muted); }
 
 button {
   border: 0;
@@ -226,15 +186,6 @@ button {
   font-size: 15px;
 }
 
-body.skin-minecraft button {
-  border-radius: 8px;
-  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.18);
-}
-
-body.skin-pokemon button {
-  border-radius: 999px;
-}
-
 button.secondary {
   background: var(--soft);
   color: var(--primary);
@@ -245,9 +196,7 @@ button.warning {
   color: var(--orangeText);
 }
 
-button.full {
-  width: 100%;
-}
+button.full { width: 100%; }
 
 button.big {
   width: 100%;
@@ -263,53 +212,91 @@ button.big {
   flex-wrap: wrap;
 }
 
-.tutor-card {
-  display: flex;
-  gap: 14px;
-  align-items: center;
+.input, select {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px;
+  font-size: 16px;
+  background: white;
+  margin: 8px 0 14px;
 }
 
-.avatar,
-.char {
-  width: 66px;
-  height: 66px;
-  border-radius: 22px;
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.message {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  animation: popIn 0.26s ease both;
+}
+
+.message.jinho {
+  flex-direction: row-reverse;
+}
+
+.avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 16px;
   display: grid;
   place-items: center;
-  font-size: 34px;
   background: var(--soft);
-}
-
-.tutor-name {
-  font-size: 20px;
-  font-weight: 900;
+  font-size: 25px;
+  flex: 0 0 auto;
 }
 
 .bubble {
-  background: #eef0ff;
-  color: #1f2937;
-  border-radius: 18px;
-  padding: 14px;
-  margin: 12px 0;
-  line-height: 1.55;
+  max-width: 82%;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 13px 14px;
+  line-height: 1.5;
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.04);
 }
 
-.phrase {
+.message.tutor .bubble {
+  background: var(--soft);
+}
+
+.message.jinho .bubble {
+  background: var(--primary);
+  color: white;
+}
+
+.expression-card {
+  background: linear-gradient(135deg, #ffffff, var(--soft));
+  border: 2px solid var(--border);
+  border-radius: 24px;
+  padding: 18px;
+  margin-top: 14px;
+}
+
+.expression {
   font-size: 34px;
   font-weight: 900;
-  margin: 12px 0 4px;
+  margin: 8px 0;
 }
 
 .roman {
   color: var(--primary);
   font-weight: 900;
-  margin-bottom: 4px;
+}
+
+.meaning {
+  color: var(--muted);
+  margin-top: 8px;
 }
 
 .game-scene {
   position: relative;
   overflow: hidden;
-  min-height: 130px;
+  min-height: 120px;
 }
 
 .scene-row {
@@ -324,10 +311,20 @@ button.big {
   gap: 8px;
 }
 
+.char {
+  width: 58px;
+  height: 58px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  background: var(--soft);
+  font-size: 31px;
+}
+
 .char.small {
-  width: 50px;
-  height: 50px;
-  font-size: 28px;
+  width: 44px;
+  height: 44px;
+  font-size: 24px;
 }
 
 .item-row {
@@ -351,13 +348,8 @@ button.big {
   line-height: 1.5;
 }
 
-.good {
-  color: var(--success);
-}
-
-.bad {
-  color: var(--danger);
-}
+.good { color: var(--success); }
+.bad { color: var(--danger); }
 
 .score-card {
   background: linear-gradient(135deg, #ffffff, #f8fafc);
@@ -392,7 +384,6 @@ button.big {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin-top: 10px;
 }
 
 .score-mini {
@@ -402,20 +393,7 @@ button.big {
   font-weight: 900;
 }
 
-.parent-score {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-top: 12px;
-}
-
-.parent-score button {
-  flex: 1 1 90px;
-}
-
-.toggle-box,
-.speech-fallback,
-.record-box {
+.notice, .record-box {
   background: #f8fafc;
   border: 1px solid var(--border);
   border-radius: 18px;
@@ -426,34 +404,6 @@ button.big {
 .record-box audio {
   width: 100%;
   margin-top: 10px;
-}
-
-.progress-wrap {
-  height: 12px;
-  background: #e5e7eb;
-  border-radius: 999px;
-  overflow: hidden;
-}
-
-.progress-bar {
-  height: 100%;
-  background: var(--primary);
-}
-
-.badge-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 12px;
-}
-
-.badge {
-  background: var(--soft);
-  color: var(--primary);
-  padding: 8px 10px;
-  border-radius: 999px;
-  font-weight: 900;
-  font-size: 12px;
 }
 
 .stat-grid {
@@ -509,18 +459,14 @@ button.big {
 }
 
 @keyframes pageFlipIn {
-  0% {
-    opacity: 0;
-    transform: perspective(900px) rotateY(-65deg) translateX(-18px);
-  }
-  60% {
-    opacity: 1;
-    transform: perspective(900px) rotateY(8deg);
-  }
-  100% {
-    opacity: 1;
-    transform: perspective(900px) rotateY(0);
-  }
+  0% { opacity: 0; transform: perspective(900px) rotateY(-60deg) translateX(-16px); }
+  60% { opacity: 1; transform: perspective(900px) rotateY(8deg); }
+  100% { opacity: 1; transform: perspective(900px) rotateY(0); }
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .error {
@@ -533,21 +479,6 @@ button.big {
 }
 
 @media (max-width: 380px) {
-  .phrase {
-    font-size: 29px;
-  }
-
-  .scene-row {
-    align-items: flex-start;
-  }
-
-  .char {
-    width: 54px;
-    height: 54px;
-  }
-
-  .char.small {
-    width: 42px;
-    height: 42px;
-  }
+  .expression { font-size: 29px; }
+  .bubble { max-width: 86%; }
 }
