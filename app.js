@@ -19,51 +19,45 @@
       subtitle: "Conversation Korean tutor for JINHO",
       nav: ["Home", "Tutor", "Review", "Voice", "Profile"],
       createTitle: "Create JINHO’s Talk Tutor",
-      createDesc: "Tutor Hana explains a game situation, teaches Korean, and JINHO follows.",
+      createDesc: "Tutor Hana talks with JINHO like a chat room.",
       theme: "Game skin",
       create: "Create tutor",
-      start: "Start chat lesson",
-      continue: "Continue chat",
-      listenTutor: "Listen tutor",
-      listenExpression: "Listen Korean",
-      autoRead: "Auto voice",
+      start: "Start chat",
+      continue: "Continue",
       autoOn: "Auto voice: ON",
       autoOff: "Auto voice: OFF",
-      scoreVoice: "🎯 Score my voice",
+      listenTutor: "Listen tutor",
+      listenKorean: "Listen Korean",
+      micReply: "🎙 Reply by voice",
       record: "Record voice",
       stop: "Stop",
       next: "Next chat",
-      micPrompt: "Tap the mic and say it!",
-      listening: "Listening to JINHO...",
-      streamerTag: "🎮 Streamer Tutor Mode",
-      retryCoach: "Nice try! Power up and say it again!",
-      successCoach: "Boom! Great Korean! Next mission!",
       finish: "Finish lesson",
-      sayThis: "Say this in Korean",
-      meaning: "Meaning",
-      roman: "Sound",
-      score: "Score",
-      target: "Target",
-      recognized: "Recognized",
-      perfect: "Excellent!",
-      good: "Good job!",
-      retry: "Try one more time!",
-      blocked: "Automatic voice score is not available in this browser. Use Record voice to record and play back JINHO’s voice.",
+      sayIntro: "In this situation, say this in Korean:",
+      listenFirst: "Listen first, then reply with the mic!",
+      listening: "Listening to JINHO...",
+      blocked: "Automatic voice reply is not available in this browser. You can still listen and record voice.",
       micBlocked: "Microphone recording is blocked. Use HTTPS GitHub Pages and allow microphone access.",
       recording: "Recording... Tap Stop when JINHO finishes.",
       recorded: "Recorded. Play it back below.",
-      completed: "Completed",
+      score: "Score",
+      recognized: "JINHO said",
+      perfect: "Boom! Perfect Korean!",
+      good: "Nice! That works!",
+      retry: "Almost! Power up and say it again!",
+      successNext: "Great reply! Let’s go to the next game moment.",
       allDone: "All chat lessons complete!",
       allDoneMsg: "Great job, JINHO!",
       reset: "Reset progress",
       review: "Review",
+      noWeak: "No weak expressions yet.",
       profile: "Learning report",
+      completed: "Completed",
       mastered: "Mastered",
       weak: "Weak",
       accuracy: "Accuracy",
-      noWeak: "No weak expressions yet.",
       voicePage: "Voice practice",
-      voicePageMsg: "Use the Tutor tab for full conversation lessons. This page is for recording and playback."
+      voicePageMsg: "Use Tutor for the conversation. This page is only for recording and playback."
     },
     ko: {
       switch: "English",
@@ -71,51 +65,45 @@
       subtitle: "JINHO를 위한 대화형 한국어 튜터",
       nav: ["홈", "튜터", "복습", "음성", "프로필"],
       createTitle: "JINHO의 대화형 튜터 만들기",
-      createDesc: "Tutor Hana가 게임 상황을 설명하고, 한국어 표현을 알려주면 JINHO가 따라 말해요.",
+      createDesc: "Tutor Hana가 채팅방처럼 JINHO와 대화해요.",
       theme: "게임 스킨",
       create: "튜터 생성",
-      start: "대화 수업 시작",
+      start: "대화 시작",
       continue: "계속하기",
-      listenTutor: "튜터 음성",
-      listenExpression: "한국어 듣기",
-      autoRead: "자동 음성",
       autoOn: "자동 음성: 켜짐",
       autoOff: "자동 음성: 꺼짐",
-      scoreVoice: "🎯 말하기 점수",
+      listenTutor: "튜터 듣기",
+      listenKorean: "한국어 듣기",
+      micReply: "🎙 음성으로 답장",
       record: "음성 녹음",
       stop: "정지",
       next: "다음 대화",
-      micPrompt: "마이크를 누르고 말해요!",
-      listening: "JINHO의 말을 듣고 있어요...",
-      streamerTag: "🎮 스트리머 튜터 모드",
-      retryCoach: "오 거의 됐어요! 파워업하고 다시 말해봐요!",
-      successCoach: "좋아요! 한국어 미션 성공! 다음으로 가요!",
       finish: "수업 완료",
-      sayThis: "이 한국어를 말해요",
-      meaning: "뜻",
-      roman: "소리",
-      score: "점수",
-      target: "목표",
-      recognized: "인식",
-      perfect: "아주 잘했어요!",
-      good: "잘했어요!",
-      retry: "한 번 더 해봐요!",
-      blocked: "이 브라우저에서는 자동 말하기 점수를 사용할 수 없습니다. 음성 녹음으로 JINHO의 목소리를 녹음하고 다시 들어보세요.",
+      sayIntro: "이 상황에서는 한국어로 이렇게 말해요:",
+      listenFirst: "먼저 듣고, 마이크로 답장해요!",
+      listening: "JINHO의 답장을 듣고 있어요...",
+      blocked: "이 브라우저에서는 자동 음성 답장을 사용할 수 없습니다. 듣기와 녹음은 계속 사용할 수 있어요.",
       micBlocked: "마이크 녹음이 막혔습니다. GitHub Pages HTTPS 주소에서 마이크를 허용해 주세요.",
       recording: "녹음 중... JINHO가 말한 뒤 정지를 누르세요.",
       recorded: "녹음 완료. 아래에서 다시 들어보세요.",
-      completed: "완료",
+      score: "점수",
+      recognized: "JINHO가 말한 내용",
+      perfect: "완벽해요! 한국어 미션 성공!",
+      good: "좋아요! 잘 말했어요!",
+      retry: "거의 됐어요! 파워업하고 다시 말해봐요!",
+      successNext: "좋은 답장이에요! 다음 게임 상황으로 가요.",
       allDone: "모든 대화 수업 완료!",
       allDoneMsg: "잘했어요, JINHO!",
       reset: "진도 초기화",
       review: "복습",
+      noWeak: "아직 약한 표현이 없어요.",
       profile: "학습 리포트",
+      completed: "완료",
       mastered: "익힌 표현",
       weak: "약점",
       accuracy: "정답률",
-      noWeak: "아직 약한 표현이 없어요.",
       voicePage: "음성 연습",
-      voicePageMsg: "전체 대화 수업은 튜터 탭에서 진행해요. 이 화면은 녹음과 재생용입니다."
+      voicePageMsg: "대화 수업은 튜터 탭에서 진행해요. 이 화면은 녹음과 재생용입니다."
     }
   };
 
@@ -141,12 +129,11 @@
     autoVoice: safeGet("talkTutor_autoVoice", true),
     settings: safeGet("talkTutor_settings", null),
     progress: safeGet("talkTutor_progress", defaultProgress()),
-    feedback: "",
+    messages: [],
     score: null,
     recognized: "",
-    jinhoBubble: "",
-    tutorReply: "",
     voiceBlocked: false,
+    feedback: "",
     audioUrl: "",
     recorder: null,
     chunks: [],
@@ -224,7 +211,7 @@
     skinStrip.querySelectorAll("[data-skin]").forEach((button) => {
       button.addEventListener("click", () => {
         state.theme = button.dataset.skin;
-        resetChatPosition();
+        resetConversation();
         save();
         render();
       });
@@ -251,7 +238,6 @@
         <h1>${T("createTitle")}</h1>
         <p class="muted">${T("createDesc")}</p>
       </section>
-
       <section class="card">
         <h2>JINHO · Age 5</h2>
         <label class="muted">${T("theme")}</label>
@@ -280,16 +266,13 @@
     screenEl.innerHTML = `
       <section class="card hero">
         <h1>Hi JINHO!</h1>
-        <p class="muted">${state.lang === "en" ? "Tutor Hana will talk with you and teach Korean." : "Tutor Hana가 JINHO와 대화하면서 한국어를 알려줄 거예요."}</p>
+        <p class="muted">${state.lang === "en" ? "Tutor Hana will talk with you in a chat room." : "Tutor Hana가 채팅방에서 JINHO와 대화할 거예요."}</p>
         <button id="startBtn">${T("start")}</button>
       </section>
-      ${sceneHtml()}
       <section class="card">
-        <h2>${theme.icon} ${theme[state.lang]} Tutor Chat</h2>
+        <h2>${theme.icon} ${theme[state.lang]}</h2>
         <p class="muted">${currentLesson().title[state.lang]}</p>
-        <div class="actions">
-          <button class="secondary" id="autoVoiceBtn">${state.autoVoice ? T("autoOn") : T("autoOff")}</button>
-        </div>
+        <button class="secondary" id="autoVoiceBtn">${state.autoVoice ? T("autoOn") : T("autoOff")}</button>
       </section>
     `;
 
@@ -297,155 +280,116 @@
     document.getElementById("autoVoiceBtn").addEventListener("click", toggleAutoVoice);
   }
 
+  function ensureStepMessages() {
+    if (state.messages.length) return;
+    const step = currentStep();
+    const theme = themes[state.theme];
+
+    state.messages.push({
+      who: "tutor",
+      avatar: "🧑🏻‍🎤",
+      text: `${theme.icon} ${step.tutor[state.lang]}`
+    });
+
+    state.messages.push({
+      who: "tutor",
+      avatar: "🧑🏻‍🎤",
+      text: step.explain[state.lang]
+    });
+
+    state.messages.push({
+      who: "tutor",
+      avatar: "🧑🏻‍🎤",
+      html: `${T("sayIntro")}<span class="korean-line">${step.expression}</span><span class="roman-line">${step.roman}</span><div class="chat-hint">${T("listenFirst")}</div>`,
+      text: `${T("sayIntro")} ${step.expression}. ${T("listenFirst")}`
+    });
+  }
+
   function renderChat() {
     if (state.progress.completed.length >= lessons.length) return renderAllDone();
 
+    ensureStepMessages();
+
     const lesson = currentLesson();
     const step = currentStep();
-    const theme = themes[state.theme];
+    const messageHtmls = state.messages.map((msg) => messageHtml(msg)).join("");
 
     screenEl.innerHTML = `
-      <section class="card page-flip">
+      <section class="card chat-room-card page-flip">
         <div class="muted">${lesson.title[state.lang]} · ${state.stepIndex + 1} / ${currentSteps().length}</div>
-        <h2>${theme.icon} Tutor Hana</h2>
-        <span class="tutor-energy">${T("streamerTag")}</span>
-        <div class="chat-window">
-          ${messageHtml("tutor", "🧑🏻‍🎤", step.tutor[state.lang])}
-          ${messageHtml("tutor", "🧑🏻‍🎤", step.explain[state.lang])}
-          ${messageHtml("tutor", "🧑🏻‍🎤", `${T("sayThis")}: ${step.expression}`)}
-          ${state.jinhoBubble ? messageHtml("jinho", "👦", state.jinhoBubble) : ""}
-          ${state.tutorReply ? messageHtml("tutor", "🧑🏻‍🎤", state.tutorReply) : ""}
-        </div>
-        <div class="actions">
-          <button id="listenTutorBtn">${T("listenTutor")}</button>
-          <button class="secondary" id="autoVoiceBtn">${state.autoVoice ? T("autoOn") : T("autoOff")}</button>
-        </div>
-      </section>
+        <h2>🎮 Tutor Hana Chat</h2>
 
-      ${sceneHtml()}
+        <div class="chat-stage">
+          <div class="chat-window">
+            ${messageHtmls}
+          </div>
 
-      <section class="expression-card active page-flip">
-        <h3>${T("sayThis")}</h3>
-        <div class="expression">${step.expression}</div>
-        <div class="roman">${T("roman")}: ${step.roman}</div>
-        <div class="meaning">${T("meaning")}: ${step.meaning[state.lang]}</div>
-        <div class="actions">
-          <button id="listenExpressionBtn">${T("listenExpression")}</button>
-        </div>
-        <div class="mic-chat">
-          <button class="mic-round" id="scoreVoiceBtn">🎙 ${T("micPrompt")}</button>
-        </div>
-      </section>
+          ${state.score !== null ? chatScoreHtml() : ""}
+          ${state.voiceBlocked ? `<div class="notice"><b>${T("blocked")}</b></div>` : ""}
+          <div class="feedback">${state.feedback}</div>
 
-      <section class="card">
-        ${scoreHtml()}
-        ${voiceBlockedHtml()}
-        ${recordBoxHtml()}
-        <div class="feedback">${state.feedback}</div>
-        <div class="actions">
-          <button id="nextBtn">${isLastStep() ? T("finish") : T("next")}</button>
+          <div class="chat-actions">
+            <button id="listenTutorBtn">${T("listenTutor")}</button>
+            <button class="secondary" id="listenKoreanBtn">${T("listenKorean")}</button>
+            <button class="secondary" id="autoVoiceBtn">${state.autoVoice ? T("autoOn") : T("autoOff")}</button>
+          </div>
+
+          <button class="chat-mic-button" id="micReplyBtn">${T("micReply")}</button>
+
+          <div class="chat-actions">
+            <button class="warning" id="nextBtn">${isLastStep() ? T("finish") : T("next")}</button>
+          </div>
         </div>
       </section>
     `;
 
-    document.getElementById("listenTutorBtn").addEventListener("click", speakTutor);
-    document.getElementById("listenExpressionBtn").addEventListener("click", () => speakKorean(step.expression));
-    document.getElementById("scoreVoiceBtn").addEventListener("click", startVoiceScore);
-    document.getElementById("nextBtn").addEventListener("click", nextChat);
+    document.getElementById("listenTutorBtn").addEventListener("click", speakCurrentTutor);
+    document.getElementById("listenKoreanBtn").addEventListener("click", () => speakKorean(step.expression));
     document.getElementById("autoVoiceBtn").addEventListener("click", toggleAutoVoice);
-    bindRecordButtons();
+    document.getElementById("micReplyBtn").addEventListener("click", startVoiceReply);
+    document.getElementById("nextBtn").addEventListener("click", nextChat);
 
-    if (state.autoVoice) {
-      setTimeout(() => speakTutorThenExpression(), 350);
+    if (state.autoVoice && state.messages.length === 3 && !state.score && !state.feedback) {
+      setTimeout(speakCurrentTutorThenKorean, 350);
     }
   }
 
-  function messageHtml(who, avatar, text) {
+  function messageHtml(msg) {
+    const body = msg.html || escapeHtml(msg.text);
     return `
-      <div class="message ${who}">
-        <div class="avatar">${avatar}</div>
-        <div class="bubble">${escapeHtml(text)}</div>
+      <div class="message ${msg.who}">
+        <div class="avatar">${msg.avatar}</div>
+        <div class="bubble">${body}</div>
       </div>
     `;
   }
 
-  function sceneHtml() {
-    const theme = themes[state.theme];
-    const chars = theme.chars.map((char, index) => `<div class="char ${index > 0 ? "small" : ""}">${char}</div>`).join("");
-    const items = theme.items.map((item) => `<span class="item-badge">${item}</span>`).join("");
-
-    return `
-      <section class="card game-scene">
-        <div class="scene-row">
-          <div>
-            <h2>${theme.icon} ${theme[state.lang]}</h2>
-            <p class="muted">${state.lang === "en" ? "Game situation" : "게임 상황"}</p>
-          </div>
-          <div class="scene-chars">${chars}</div>
-        </div>
-        <div class="item-row">${items}</div>
-      </section>
-    `;
-  }
-
-  function scoreHtml() {
-    if (state.score === null && !state.recognized) return "";
+  function chatScoreHtml() {
     const score = state.score || 0;
     return `
-      <div class="score-card">
-        <h3>🎯 ${T("score")}</h3>
-        <div class="score-big">${score}</div>
-        <div class="score-bar"><div class="score-fill" style="width:${score}%"></div></div>
-        <div class="score-row">
-          <div class="score-mini">${T("target")}<br>${currentStep().expression}</div>
-          <div class="score-mini">${T("recognized")}<br>${state.recognized || "-"}</div>
-        </div>
+      <div class="chat-score">
+        ${T("score")}: <b>${score}</b><br>
+        ${T("recognized")}: <b>${escapeHtml(state.recognized || "-")}</b>
       </div>
     `;
   }
 
-  function voiceBlockedHtml() {
-    if (!state.voiceBlocked) return "";
-    return `<div class="notice"><b>${T("blocked")}</b></div>`;
-  }
-
-  function recordBoxHtml() {
-    const audio = state.audioUrl ? `<audio controls src="${state.audioUrl}"></audio>` : "";
-    return `
-      <div class="record-box">
-        <h3>🎙 ${T("record")}</h3>
-        <p class="muted">${state.lang === "en" ? "Record JINHO’s real voice and play it back." : "JINHO의 실제 목소리를 녹음하고 다시 들어볼 수 있어요."}</p>
-        <div class="actions">
-          <button id="recordBtn">${T("record")}</button>
-          <button class="warning" id="stopBtn">${T("stop")}</button>
-        </div>
-        ${audio}
-      </div>
-    `;
-  }
-
-  function bindRecordButtons() {
-    const recordBtn = document.getElementById("recordBtn");
-    const stopBtn = document.getElementById("stopBtn");
-    if (recordBtn) recordBtn.addEventListener("click", startRecording);
-    if (stopBtn) stopBtn.addEventListener("click", stopRecording);
-  }
-
-  function speakTutor() {
+  function speakCurrentTutor() {
     const step = currentStep();
-    speakText(step.tutor[state.lang] + " " + step.explain[state.lang], state.lang === "ko" ? "ko-KR" : "en-US", 0.88);
+    const text = `${step.tutor[state.lang]} ${step.explain[state.lang]} ${T("sayIntro")} ${step.expression}`;
+    speakText(text, state.lang === "ko" ? "ko-KR" : "en-US", 1.02);
   }
 
-  function speakTutorThenExpression() {
+  function speakCurrentTutorThenKorean() {
     const step = currentStep();
-    const text = step.tutor[state.lang] + " " + step.explain[state.lang];
-    speakText(text, state.lang === "ko" ? "ko-KR" : "en-US", 0.88, () => {
+    const text = `${step.tutor[state.lang]} ${step.explain[state.lang]} ${T("sayIntro")}`;
+    speakText(text, state.lang === "ko" ? "ko-KR" : "en-US", 1.02, () => {
       setTimeout(() => speakKorean(step.expression), 350);
     });
   }
 
   function speakKorean(text) {
-    speakText(text, "ko-KR", 0.78);
+    speakText(text, "ko-KR", 0.82);
   }
 
   function speakText(text, lang, rate, onEnd) {
@@ -454,7 +398,7 @@
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = lang;
       utterance.rate = rate || 0.95;
-      utterance.pitch = lang === "ko-KR" ? 1.12 : 1.22;
+      utterance.pitch = lang === "ko-KR" ? 1.08 : 1.22;
 
       const voices = speechSynthesis.getVoices ? speechSynthesis.getVoices() : [];
       const preferred = voices.find((voice) =>
@@ -465,51 +409,14 @@
       utterance.onend = () => {
         if (typeof onEnd === "function") onEnd();
       };
+
       speechSynthesis.speak(utterance);
     } catch {
-      // Some browsers may block TTS until the first user action.
+      // Browser may block TTS until first user action.
     }
   }
 
-  function toggleAutoVoice() {
-    state.autoVoice = !state.autoVoice;
-    save();
-    render();
-  }
-
-  function normalize(text) {
-    return String(text || "").trim().replace(/[.?!]/g, "").replace(/\s+/g, " ");
-  }
-
-  function levenshtein(a, b) {
-    const matrix = [];
-    for (let i = 0; i <= b.length; i++) matrix[i] = [i];
-    for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
-    for (let i = 1; i <= b.length; i++) {
-      for (let j = 1; j <= a.length; j++) {
-        if (b.charAt(i - 1) === a.charAt(j - 1)) {
-          matrix[i][j] = matrix[i - 1][j - 1];
-        } else {
-          matrix[i][j] = Math.min(matrix[i - 1][j - 1] + 1, matrix[i][j - 1] + 1, matrix[i - 1][j] + 1);
-        }
-      }
-    }
-    return matrix[b.length][a.length];
-  }
-
-  function similarityScore(a, b) {
-    a = normalize(a);
-    b = normalize(b);
-    if (!a || !b) return 0;
-    if (a === b) return 100;
-    const longer = a.length > b.length ? a : b;
-    const shorter = a.length > b.length ? b : a;
-    let score = Math.round((1 - levenshtein(longer, shorter) / Math.max(longer.length, 1)) * 100);
-    if (a.includes(b) || b.includes(a)) score = Math.max(score, 78);
-    return Math.max(0, Math.min(100, score));
-  }
-
-  function startVoiceScore() {
+  function startVoiceReply() {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!SpeechRecognition) {
       state.voiceBlocked = true;
@@ -525,12 +432,11 @@
 
     state.voiceBlocked = false;
     state.feedback = T("listening");
-    state.tutorReply = "";
     render();
 
     recognition.onresult = (event) => {
       const spoken = event.results[0][0].transcript;
-      applyScore(spoken);
+      applyReply(spoken);
     };
 
     recognition.onerror = () => {
@@ -548,62 +454,86 @@
     }
   }
 
-  function applyScore(spoken) {
-    const target = currentStep().expression;
+  function normalize(text) {
+    return String(text || "").trim().replace(/[.?!]/g, "").replace(/\s+/g, " ");
+  }
+
+  function levenshtein(a, b) {
+    const matrix = [];
+    for (let i = 0; i <= b.length; i++) matrix[i] = [i];
+    for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
+    for (let i = 1; i <= b.length; i++) {
+      for (let j = 1; j <= a.length; j++) {
+        matrix[i][j] = b.charAt(i - 1) === a.charAt(j - 1)
+          ? matrix[i - 1][j - 1]
+          : Math.min(matrix[i - 1][j - 1] + 1, matrix[i][j - 1] + 1, matrix[i - 1][j] + 1);
+      }
+    }
+    return matrix[b.length][a.length];
+  }
+
+  function similarityScore(a, b) {
+    a = normalize(a);
+    b = normalize(b);
+    if (!a || !b) return 0;
+    if (a === b) return 100;
+    const longer = a.length > b.length ? a : b;
+    const shorter = a.length > b.length ? b : a;
+    let score = Math.round((1 - levenshtein(longer, shorter) / Math.max(longer.length, 1)) * 100);
+    if (a.includes(b) || b.includes(a)) score = Math.max(score, 78);
+    return Math.max(0, Math.min(100, score));
+  }
+
+  function applyReply(spoken) {
+    const step = currentStep();
+    const target = step.expression;
     const score = similarityScore(spoken, target);
 
     state.recognized = spoken || "-";
-    state.jinhoBubble = spoken || "-";
     state.score = score;
     state.progress.attempts += 1;
 
+    state.messages.push({
+      who: "jinho",
+      avatar: "👦",
+      text: spoken || "-"
+    });
+
     if (score >= 75) {
-      state.feedback = `<span class="good">${score >= 90 ? T("perfect") : T("good")}</span>`;
       state.progress.correct += 1;
       addMastered(target);
-      state.tutorReply = currentStep().reaction[state.lang] + " " + T("successCoach");
+      const reply = `${score >= 90 ? T("perfect") : T("good")} ${step.reaction[state.lang]} ${T("successNext")}`;
+      state.messages.push({ who: "tutor", avatar: "🧑🏻‍🎤", text: reply });
+      state.feedback = `<span class="good">${score >= 90 ? T("perfect") : T("good")}</span>`;
       save();
       render();
-      speakText(state.tutorReply, state.lang === "ko" ? "ko-KR" : "en-US", 1.02);
-      setTimeout(() => nextChat(), 2600);
+      speakText(reply, state.lang === "ko" ? "ko-KR" : "en-US", 1.03);
+      setTimeout(nextChat, 3000);
       return;
     }
 
-    state.feedback = `<span class="bad">${T("retry")}</span>`;
     addWeak(target);
-    state.tutorReply = T("retryCoach") + " " + (state.lang === "en" ? "Listen again: " : "다시 들어봐요: ") + target;
+    const retry = `${T("retry")} ${T("sayIntro")} ${target}`;
+    state.messages.push({
+      who: "tutor",
+      avatar: "🧑🏻‍🎤",
+      html: `${T("retry")}<span class="korean-line">${target}</span><span class="roman-line">${step.roman}</span>`,
+      text: retry
+    });
+    state.feedback = `<span class="bad">${T("retry")}</span>`;
     save();
     render();
-    speakText(state.tutorReply, state.lang === "ko" ? "ko-KR" : "en-US", 1.02, () => {
+    speakText(retry, state.lang === "ko" ? "ko-KR" : "en-US", 1.03, () => {
       setTimeout(() => speakKorean(target), 350);
     });
-  }
-
-  function speakReaction() {
-    const reaction = currentStep().reaction[state.lang];
-    setTimeout(() => speakText(reaction, state.lang === "ko" ? "ko-KR" : "en-US", 0.9), 300);
-  }
-
-  function addMastered(text) {
-    if (!state.progress.mastered.includes(text)) state.progress.mastered.push(text);
-    const index = state.progress.weak.indexOf(text);
-    if (index >= 0) state.progress.weak.splice(index, 1);
-  }
-
-  function addWeak(text) {
-    if (!state.progress.mastered.includes(text) && !state.progress.weak.includes(text)) {
-      state.progress.weak.push(text);
-    }
   }
 
   function nextChat() {
     state.feedback = "";
     state.score = null;
     state.recognized = "";
-    state.jinhoBubble = "";
-    state.tutorReply = "";
     state.voiceBlocked = false;
-    state.audioUrl = "";
+    state.messages = [];
 
     if (!isLastStep()) {
       state.stepIndex += 1;
@@ -661,8 +591,8 @@
     weak.forEach((text, index) => {
       html += `
         <section class="card">
-          <div class="expression">${text}</div>
-          <button data-review-index="${index}">${T("listenExpression")}</button>
+          <div class="expression">${escapeHtml(text)}</div>
+          <button data-review-index="${index}">${T("listenKorean")}</button>
         </section>
       `;
     });
@@ -703,6 +633,28 @@
       </section>
     `;
     document.getElementById("resetProgressBtn").addEventListener("click", resetProgress);
+  }
+
+  function recordBoxHtml() {
+    const audio = state.audioUrl ? `<audio controls src="${state.audioUrl}"></audio>` : "";
+    return `
+      <div class="record-box">
+        <h3>🎙 ${T("record")}</h3>
+        <p class="muted">${state.lang === "en" ? "Record JINHO’s real voice and play it back." : "JINHO의 실제 목소리를 녹음하고 다시 들어볼 수 있어요."}</p>
+        <div class="actions">
+          <button id="recordBtn">${T("record")}</button>
+          <button class="warning" id="stopBtn">${T("stop")}</button>
+        </div>
+        ${audio}
+      </div>
+    `;
+  }
+
+  function bindRecordButtons() {
+    const recordBtn = document.getElementById("recordBtn");
+    const stopBtn = document.getElementById("stopBtn");
+    if (recordBtn) recordBtn.addEventListener("click", startRecording);
+    if (stopBtn) stopBtn.addEventListener("click", stopRecording);
   }
 
   function getSupportedAudioMimeType() {
@@ -784,22 +736,45 @@
     }
   }
 
+  function addMastered(text) {
+    if (!state.progress.mastered.includes(text)) state.progress.mastered.push(text);
+    const index = state.progress.weak.indexOf(text);
+    if (index >= 0) state.progress.weak.splice(index, 1);
+  }
+
+  function addWeak(text) {
+    if (!state.progress.mastered.includes(text) && !state.progress.weak.includes(text)) {
+      state.progress.weak.push(text);
+    }
+  }
+
+  function toggleAutoVoice() {
+    state.autoVoice = !state.autoVoice;
+    save();
+    render();
+  }
+
   function resetProgress() {
     state.progress = { completed: [], mastered: [], weak: [], streak: 1, correct: 0, attempts: 0 };
-    resetChatPosition();
+    state.lessonIndex = 0;
+    state.stepIndex = 0;
+    state.messages = [];
     state.feedback = "";
     state.score = null;
     state.recognized = "";
-    state.jinhoBubble = "";
-    state.tutorReply = "";
     state.voiceBlocked = false;
     save();
     render();
   }
 
-  function resetChatPosition() {
+  function resetConversation() {
     state.lessonIndex = 0;
     state.stepIndex = 0;
+    state.messages = [];
+    state.feedback = "";
+    state.score = null;
+    state.recognized = "";
+    state.voiceBlocked = false;
   }
 
   function goTab(tab) {
@@ -818,6 +793,7 @@
 
   langBtn.addEventListener("click", () => {
     state.lang = state.lang === "en" ? "ko" : "en";
+    state.messages = [];
     save();
     render();
   });

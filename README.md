@@ -66,3 +66,17 @@ This version makes the lesson more like a real conversation:
 - If the score is high enough, Tutor Hana reacts and moves to the next chat.
 - If the score is low, Tutor Hana asks JINHO to try again.
 - Tutor TTS uses higher pitch/rate for a more playful streamer-like feel, within browser TTS limits.
+
+
+## Chat-only update talk4
+
+This version removes the separate expression/game cards from the lesson screen.
+
+Everything happens inside the Tutor chat:
+- Tutor explains the situation.
+- Tutor gives the Korean expression in a chat bubble.
+- JINHO taps the mic to reply.
+- The recognized speech appears as JINHO's chat bubble.
+- Tutor replies in the same chat.
+- High score moves to the next chat.
+- Low score asks JINHO to try again.

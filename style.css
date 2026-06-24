@@ -537,3 +537,76 @@ button.big {
   border-color: var(--primary);
   box-shadow: 0 14px 34px rgba(17, 24, 39, 0.08);
 }
+
+
+/* talk4 chat-only overrides */
+.chat-room-card {
+  padding: 14px;
+}
+
+.chat-stage {
+  min-height: 66vh;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.message .bubble .korean-line {
+  display: block;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 8px 0 4px;
+}
+
+.message .bubble .roman-line {
+  display: block;
+  color: var(--primary);
+  font-weight: 900;
+  margin-top: 3px;
+}
+
+.message.tutor .bubble .roman-line {
+  color: var(--primary);
+}
+
+.chat-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.chat-actions button {
+  flex: 1 1 120px;
+}
+
+.chat-mic-button {
+  width: 100%;
+  min-height: 66px;
+  border-radius: 999px;
+  font-size: 21px;
+  margin-top: 10px;
+}
+
+.chat-score {
+  background: rgba(255,255,255,.68);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 9px 10px;
+  margin-top: 8px;
+  font-weight: 900;
+}
+
+.chat-score b {
+  color: var(--primary);
+}
+
+.message.system .bubble {
+  background: var(--orange);
+  color: var(--orangeText);
+}
+
+.expression-card,
+.game-scene {
+  display: none !important;
+}
